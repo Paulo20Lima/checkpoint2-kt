@@ -1,4 +1,7 @@
-# 📲 Aplicativo Android - Cotação do Bitcoin em Tempo Real  
+# 📲 Aplicativo Android - Cotação do Bitcoin em Tempo Real
+
+👨‍🎓 **Aluno:** Paulo Henrique da Silva Lima  
+🏫 **Turma:** 3SIR - FIAP
 
 Este é um projeto Android desenvolvido em Kotlin que consome uma API pública do **Mercado Bitcoin** para mostrar a cotação atual do Bitcoin. O usuário pode atualizar o valor em tempo real clicando no botão **"Atualizar"**.
 
