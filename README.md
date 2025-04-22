@@ -10,7 +10,7 @@ Este é um projeto Android desenvolvido em Kotlin que consome uma API pública d
 ## 📸 Imagens  
 ![img](https://github.com/user-attachments/assets/1c160725-4fca-49f7-bd85-4732f2cc5729)
 
-*Captura de tela realizada diretamente do meu celular durante os testes do aplicativo.*
+*Capturas de tela realizada diretamente do meu celular durante os testes do aplicativo.*
 
 ---
 
@@ -40,11 +40,28 @@ Arquivo principal da aplicação, responsável por exibir os dados na interface 
 **Explicação das principais funções:**  
 - `onCreate()` → Define o layout e configura o botão e a toolbar  
 - `configureToolbar()` → Personaliza a barra superior com título e cor  
-- `makeRestCall()` →  
+- `makeRestCall()` 
   - Cria uma Coroutine na thread principal  
   - Chama a API via Retrofit  
   - Trata o resultado e formata os dados com `NumberFormat` e `SimpleDateFormat`  
   - Mostra um `Toast` em caso de falha
+
+### 🔍 Detalhe importante
+
+O valor `last` representa o **último preço negociado do Bitcoin** e é obtido diretamente do objeto `Ticker`, que está dentro do `TickerResponse`, retornado pela API.
+
+Este valor é acessado no código por meio da seguinte linha:
+
+* val lastValue = tickerResponse?.ticker?.last?.toDoubleOrNull()
+
+### 🧠 Como funciona?
+**tickerResponse** é o corpo da resposta da API (TickerResponse).
+
+* .ticker acessa o objeto Ticker dentro da resposta.
+
+* .last pega o valor do último preço negociado do Bitcoin.
+
+* .toDoubleOrNull() converte o valor para Double de forma segura, caso ele venha como String.
 
 ---
 
