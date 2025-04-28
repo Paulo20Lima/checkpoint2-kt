@@ -8,7 +8,8 @@ Este é um projeto Android desenvolvido em Kotlin que consome uma API pública d
 ---
 
 ## 📸 Imagens  
-![img](https://github.com/user-attachments/assets/1c160725-4fca-49f7-bd85-4732f2cc5729)
+![img2 (2)](https://github.com/user-attachments/assets/97561634-5af1-47f1-a388-15bb0a4f1b15)
+
 
 *Capturas de tela realizada diretamente do meu celular durante os testes do aplicativo.*
 
@@ -98,7 +99,6 @@ Modelos de dados utilizados para mapear a resposta JSON da API (localizado no pa
 **Estrutura dos dados:**  
 A classe `TickerResponse` contém um único atributo `ticker`, do tipo `Ticker`, que representa os dados da cotação.
 
-```kotlin
 high: valor mais alto  
 low: valor mais baixo  
 vol: volume negociado  
@@ -106,3 +106,12 @@ last: último preço
 buy: preço de compra  
 sell: preço de venda  
 date: timestamp da cotação  
+
+## 📲 Como usar  
+
+- Baixe o projeto ou clone e abra no Android Studio  
+- Execute em um dispositivo Android ou emulador  
+- Clique em **Atualizar** para ver o valor atual do Bitcoin  
+- Os dados serão exibidos com o preço em real e a data da última atualização
+  
+⚠ **É necessário ter conexão com internet**
